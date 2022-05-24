@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {{>links}}
+    <title>Add-event form</title>
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        {{>hnav}}
+
+        <!-- Page Content  -->
+        <div id="content" class="content">
+
+            {{>vnav}}
+
+            <div class="cont">
+
+                <div class="line">
+                    <form action="/addevent" method="post">
+                        <hr>
+                        <h4>Event Type</h4>
+                        <hr>
+                        <div class="event-type">
+                            <div class="event-box">
+                                <input type="radio" name="event" id="treatement" value="treatement">
+                                <label for="treatement">Treatement</label>
+                            </div>
+                            <div class="event-box">
+                                <input type="radio" name="event" id="mated" value="mated">
+                                <label for="treatement">Mated</label>
+                            </div>
+                            <div class="event-box">
+                                <input type="radio" name="event" id="purchased" value="purchased">
+                                <label for="treatement">Purchased</label>
+                            </div>
+                            <div class="event-box">
+                                <input type="radio" name="event" id="sold" value="sold">
+                                <label for="treatement">Sold</label>
+                            </div>
+                            <div class="event-box">
+                                <input type="radio" name="event" id="other" value="other">
+                                <label for="treatement">Other</label>
+                            </div>
+                        </div><br>
+                        <div class="event-date">
+                            <input type="date" name="date" id="">
+                        </div>
+                        <hr>
+                        <h4>Event Details</h4>
+                        <hr>
+                        <div class="add-animal">
+                            <input type="text" name="desc" id="" placeholder="Description"><br>
+                            <input type="text" name="doctorName" id="" placeholder="Doctor Name"><br>
+                            <input type="text" name="location" id="" placeholder="Location"><br>
+                            <input type="text" name="notes" id="" placeholder="Notes">
+                            <button type="submit">save</button>
+                        </div>
+                        <br>
+                    </form>
+
+                </div>
+
+
+
+                <div class="line">
+
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+    {{>scripts}}
+</body>
+
+</html>

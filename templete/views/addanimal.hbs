@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {{>links}}
+
+    <title>animal-form</title>
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        {{>hnav}}
+        <!-- Page Content  -->
+        <div id="content" class="content">
+
+            {{>vnav}}
+
+            <div class="cont">
+                <form action="/addanimal" method="post">
+
+                    <div class="line">
+                        <div class="select-animal">
+                            <div class="ani-box">
+
+                                <input type="image" name="animalType" value="cow" id="Cow" src="./img/cow.jpg">
+                                <label for="cow">Cow</label>
+                            </div>
+                            <div class="ani-box">
+                                <input type="image" name="animalType" value="goat" id="Goat" src="./img/goat.jpg">
+                                <label for="goat">Goat</label>
+                            </div>
+
+                            <div class="ani-box">
+                                <input type="image" name="animalType" value="buffalo" id="Buffalo" src="./img/buffalo.jpg">
+                                <label for="buffalo">Buffalo</label>
+                            </div>
+                            <div class="ani-box">
+                                <input type="image" name="animalType" value="sheep" id="Sheep" src="./img/sheep-20275.png">
+                                <label for="sheep">Sheep</label>
+                            </div>
+                            <div class="ani-box">
+                                <input type="image" name="animalType" value="horse" id="Sheep" src="./img/horse.jpg">
+                                <label for="horse">Horse</label>
+                            </div>
+                        </div>
+                        <div class="add-animal">
+                            <input type="text" name="animalName" id="" placeholder=" Animal Name *"><br>
+                            <input type="text" name="tagNumber" id="" placeholder="Tag Number"><br>
+                            <hr>
+                            <h4>About of Animal</h4>
+                            <hr>
+                            <label for="gender">Gender</label><br>
+                            <div class="gen">
+                                <div class="male">
+                                    <input type="radio" name="gender" id="male" value="male">
+                                    <label for="">Male</label>
+                                </div>
+                                <div class="female">
+                                    <input type="radio" name="gender" id="female" value="female">
+                                    <label for="">Female</label>
+                                </div>
+                            </div>
+                            <br>
+                            <input type="text" name="breed" id="" placeholder="Breed"><br>
+                            <div class="select">
+                                <select name="status" id="status">
+                                    <option value="lacting">Lacting</option>
+                                    <option value="non-lacting">Non-lacting</option>
+
+                                </select><br>
+                                <select name="status" id="status">
+                                    <option value="">Source</option>
+                                    <option value="purchased">Purchased</option>
+                                    <option value="bornOnFarm">Born on farm</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div><br>
+
+                            <input type="text" name="desc" id="" placeholder="Description"><br>
+                            <hr>
+                            <h4>Date</h4>
+                            <hr>
+                            <div class="datebox">
+                                <div class="date">
+                                    <label for="birthdate">Birthdate:</label>
+                                    <input type="date" name="birthdate" placeholder="Birthdate">
+                                </div>
+                                <div class="date">
+                                    <label for="birthdate">JoinDate:</label>
+                                    <input type="date" name="joindate" id="" placeholder="Joindate">
+                                </div>
+                            </div>
+                            <hr>
+                            <h4>Relation</h4>
+                            <hr>
+                            <div class="relation-box">
+                                <div class="rel">
+                                    <input type="text" name="father" id="" placeholder="Father">
+                                </div><br>
+                                <div class="rel">
+                                    <input type="text" name="mother" id="" placeholder="Mother">
+                                </div>
+                            </div>
+                            <hr>
+                            <h4>Body Details</h4>
+                            <hr>
+                            <div class="body-d">
+                                <input type="text" name="weight" id="" placeholder="Weight"><br>
+                                <input type="text" name="height" id="" placeholder="Height"><br>
+                                <input type="text" name="length" id="" placeholder="Length"><br>
+
+                            </div>
+                            <hr>
+                            <h4>Other</h4>
+                            <hr>
+                            <div class="other">
+                                <input type="text" name="notes" id="" placeholder="Notes">
+                            </div>
+                            {{!-- <a href="show-animal"> --}}
+                                <button class="btn" type="submit">Save</button>
+                            {{!-- </a> --}}
+
+
+
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    {{> scripts}}
+</body>
+
+</html>

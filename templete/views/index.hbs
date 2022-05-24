@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {{>links}}
+
+    <title>Welcome-Page</title>
+<script src="ind.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        {{>hnav}}
+
+        <!-- Page Content  -->
+        <div id="content" class="content">
+
+            {{>vnav}}
+
+            <div class="cont">
+
+                <div class="line">
+                    <img src="./img/pexels-photo-877234.jpeg" alt="">
+                    <a href="welcome-farm"><button>Manage Your Farm</button></a>
+                    
+                    {{!-- <input type="button" value="manage yourfarms"> --}}
+                </div>
+
+
+
+                <div class="line">
+                    <h1 id="h1">Welcome {{firstName}}</h1>
+                </div>
+
+
+
+                <div class="line"></div>
+
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+   {{>scripts}}
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {{>links}}
+
+    <title>Add-farm-form</title>
+    {{!-- <script src="addfarm.js" defer></script> --}}
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        {{>hnav}}
+        <!-- Page Content  -->
+        <div id="content" class="content">
+
+            {{>vnav}}
+            <div class="cont">
+
+                <div class="line">
+
+                </div>
+
+
+
+                <div class="line">
+                    <div class="addfarm add-animal">
+                        <form action="/addfarm" method="post">
+                            <input type="text" name="farmName" id="farmName" placeholder="Farm Name"><br>
+                            <input type="text" name="farmDesc" id="farmDesc" placeholder="Farm Description"><br>
+                            <input type="text" name="farmAdd" id="farmAddress" placeholder="Farm Address"><br>
+                            <input type="tel" name="contact" id="contactNumber" placeholder="Contact number">
+                            {{!-- <a href="welcome-farm"><button id="farm-save-btn">Save</button></a> --}}
+
+                            {{!-- <button><i class="fa-solid fa-arrow-left-long"></i></button></a> --}}
+
+                            <a href="/welcome-farm"><button  type="submit">Save</button></a>
+                        </form>
+                    <a href="welcome-farm"><button><i class="fa-solid fa-arrow-left-long"></i></button></a>
+
+                    </div>
+                            {{!-- <input type="submit" value="submit"> --}}
+                </div>
+
+
+
+                <div class="line"></div>
+
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+    {{>scripts}}
+</body>
+
+</html>
